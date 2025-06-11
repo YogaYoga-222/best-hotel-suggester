@@ -1,40 +1,46 @@
 # Best Hotel Suggester
 
-This is a simple Python project that helps users find the best hotel to stay based on their **budget** and **hotel ratings**. The project uses basic Python and `pandas` to filter and suggest the most suitable hotel(s).
+This project helps users find the best hotel to stay based on their **budget**, **rating**, and **cost**. It includes three different approaches, including one using **Logistic Regression**.
 
 ---
 
 ## Project Files
 
 - `hotel_recommender.py`  
-  → Loads hotel data from a CSV file and recommends the best hotels under the user's budget.
+  → Loads hotel data from a CSV file and recommends hotels within the user's budget based on rating.
 
 - `hotel_recommender_1.py`  
-  → Lets the user manually enter hotel information and then recommends the best hotel under their budget.
+  → Lets the user manually enter hotel details and recommends the best option under their budget.
+
+- `hotel_recommender_2.py`  
+  → Uses **Logistic Regression** to predict whether a customer will stay at a hotel based on cost, rating, and budget.
 
 ---
 
-## How It Works
+## How Each Script Works
 
 ### `hotel_recommender.py`
-- Reads hotel data from a `.csv` file
-- Asks the user for their budget
-- Filters hotels within that budget
-- Sorts the hotels by rating (highest first)
-- Recommends the best options
+- Reads hotel data from a CSV file
+- Asks for user's budget
+- Filters and sorts hotels based on rating
+- Displays hotels under budget
 
 ### `hotel_recommender_1.py`
-- Takes input for 4 hotels from the user (name, rating, cost)
-- Asks for the user's budget
-- Filters hotels based on the given budget
-- Sorts hotels by rating (highest first)
-- Recommends the best hotel(s)
+- Takes hotel info as input from the user
+- Asks for user's budget
+- Suggests best option(s) using simple filtering and sorting
+
+### `hotel_recommender_2.py`
+- Uses `scikit-learn` to train a **Logistic Regression model**
+- Predicts if a user will choose to stay at a hotel based on:
+  - Rating
+  - Hotel Cost
+  - Customer Budget
+- Prints accuracy, confusion matrix, and prediction
 
 ---
 
-## Sample Dataset (CSV Format)
-
-If you're using `hotel_recommender.py`, create a CSV file like below:
+## Sample CSV Format (for `hotel_recommender.py`)
 
 ```csv
 Hotel,Rating,Cost
@@ -56,7 +62,17 @@ pip install pandas
 python3 hotel_recommender.py
 ```
 or
-
 ```bash
 python3 hotel_recommender_1.py
 ```
+or
+```bash
+python3 hotel_recommender_2.py
+```
+## What You'll Learn
+
+* How to filter and sort hotel data based on cost and rating
+* How to take user input and process it
+* How to use Logistic Regression for binary classification (e.g., will the user stay or not)
+
+
