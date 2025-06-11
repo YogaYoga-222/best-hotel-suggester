@@ -69,6 +69,9 @@ or
 ```bash
 python3 hotel_recommender_2.py
 ```
+> **Note:** Use `python` if `python3` doesn't work on your system.
+---------
+
 ## What You'll Learn
 
 * How to filter and sort hotel data based on cost and rating
