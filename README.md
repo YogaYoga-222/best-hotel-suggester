@@ -56,7 +56,27 @@ Budget Inn,3.2,800
 pip install pandas
 ```
 -------
-## How to Run
+
+## How to Run This Project
+
+1. Clone the repository:
+
+ ```bash
+ git clone git@github.com:YogaYoga-222/best-hotel-suggester.git
+ cd best-hotel-suggester
+ ```
+2.Create a virtual environment:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+3.Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+4.Run the desired script:
 
 ```bash
 python3 hotel_recommender.py
