@@ -20,20 +20,25 @@ cd best-hotel-suggester
 
 ```bash
 python3 -m venv venv
-source venv/bin/activate    # On Linux/macOS
-venv\Scripts\activate.bat   # On Windows
+
+# Activate on Linux/macOS:
+source venv/bin/activate
+
+# Activate on Windows:
+venv\Scripts\activate.bat
 ```
+
 
 # Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
-Or manually:
+# Or install them manually:
 
-* pandas
-* scikit-learn
-* numpy
+```bash
+pip install pandas scikit-learn numpy
+```
 
 # Run any of the Python files to test:
 
